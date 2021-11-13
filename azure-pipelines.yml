@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: PMA69
+  vmImage: MyPool
 
 variables:
   buildConfiguration: 'Release'
