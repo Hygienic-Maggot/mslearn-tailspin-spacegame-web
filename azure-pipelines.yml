@@ -9,7 +9,8 @@ trigger:
 pool:
   vmImage: 'MyPool'
   name: Default    # your job runs on an agent in this pool
-  demands: agent.os -equals Windows_NT    # the agent must have this capability to run the job
+  demands: 
+  agent.os -equals Windows_NT    # the agent must have this capability to run the job
   - npm #add node.js 
 
 variables:
