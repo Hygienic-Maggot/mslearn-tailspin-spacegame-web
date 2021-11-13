@@ -8,6 +8,8 @@ trigger:
 
 pool:
   vmImage: 'MyPool'
+  name: PMA69    # your job runs on an agent in this pool
+  demands: agent.os -equals Windows_NT    # the agent must have this capability to run the job
 
 variables:
   buildConfiguration: 'Release'
